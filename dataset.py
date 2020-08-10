@@ -43,7 +43,7 @@ while(1):
     frame = cv2.flip(frame, 1)
 
     # bounding box from previous script
-    bbox = [561,  83, 384, 287]
+    bbox = [346, 123, 544, 312]
 
     # Make a rectabgle for visual help
     cv2.rectangle(frame, (bbox[0], bbox[1]),
