@@ -79,4 +79,4 @@ while(1):
 cap.release()
 cv2.destroyAllWindows()
 
-#[38, 33, 263, 258]
+#[561, 83, 384, 287]
