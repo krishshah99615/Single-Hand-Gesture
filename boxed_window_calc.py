@@ -21,8 +21,8 @@ def nothing():
 
 cv2.createTrackbar('x1', 'image', 0, WIDTH, nothing)
 cv2.createTrackbar('y1', 'image', 0, HEIGHT, nothing)
-cv2.createTrackbar('x2', 'image', 0, WIDTH, nothing)
-cv2.createTrackbar('y2', 'image', 0, HEIGHT, nothing)
+cv2.createTrackbar('x2', 'image', 100, WIDTH, nothing)
+cv2.createTrackbar('y2', 'image', 100, HEIGHT, nothing)
 
 
 while(1):
@@ -37,7 +37,7 @@ while(1):
     x2 = cv2.getTrackbarPos('x2', 'image')
     y2 = cv2.getTrackbarPos('y2', 'image')
 
-    if((x1 >= x2) | | (y1 >= y2)):
+    if((x1 >= x2) | (y1 >= y2)):
         print("X1 should not b e greater than X2 and Y1 should not be greater Y2")
 
     # showing rectangle for visual aid
@@ -46,7 +46,7 @@ while(1):
     # printing the bbox coorrdinates
     print([x1, y1, x2, y2])
 
-    cv2.imshow("frame", frame)
+    cv2.imshow("image", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
