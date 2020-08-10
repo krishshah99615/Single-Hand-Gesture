@@ -37,6 +37,9 @@ while(1):
     x2 = cv2.getTrackbarPos('x2', 'image')
     y2 = cv2.getTrackbarPos('y2', 'image')
 
+    if((x1 >= x2) | | (y1 >= y2)):
+        print("X1 should not b e greater than X2 and Y1 should not be greater Y2")
+
     # showing rectangle for visual aid
     cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
 
