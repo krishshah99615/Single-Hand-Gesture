@@ -60,7 +60,7 @@ while(1):
         # storing dynaic name of the file
         f_name = f"{g_name}-{counter}.jpg"
         # writing the image
-        cv2.imwrite(f_name, rect)
+        cv2.imwrite(os.path.join(g_dir, f_name), rect)
 
         print("Saving "+str(f_name))
 
