@@ -17,4 +17,9 @@ Bharatanatyam also previously called Sadir Attam is a major form of Indian class
   - Make atleast 50 captures per class of gesture using the script dataset.py
     ```sg
     $ python dataset.py -n "Gesture_name"
+  
+  - Set preprocessing accoring to to lighting using the script preprocess.py
+    ```sg
+    $ python preprocess.py 
+
      ```
