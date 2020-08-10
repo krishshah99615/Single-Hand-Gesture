@@ -30,13 +30,12 @@ g_dir = os.path.join(BASE_DIR, g_name)
 os.makedirs(g_dir, exist_ok=True)
 print("Made folder name "+str(g_name))
 
-
+counter = 0
 ####################### Starting capturing ##########################
 print("Starting Capturing .......")
 while(1):
 
     # counter to get count of no of images saved
-    counter = 0
 
     ret, frame = cap.read()
 
@@ -65,11 +64,11 @@ while(1):
         print("Saving "+str(f_name))
 
         # printing on screen the counter
-        cv2.putText(frame, f"Counter for {g_name} : {counter}",
-                    (400, 38), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0, 2))
+
         # updating count
         counter = counter+1
-
+    cv2.putText(frame, f"Counter for {g_name} : {counter}",
+                (100, 38), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 0, 0, 2))
     cv2.imshow("frame", frame)
     #cv2.imshow("bbox", rect)
 
