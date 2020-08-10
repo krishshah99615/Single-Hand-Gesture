@@ -24,12 +24,12 @@ x_thresh = 100
 
 
 def preprocess(name):
-    img = cv2.imread(name)
-
-    converted = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-    mask = cv2.inRange(converted, lower, upper)
-    mask_d = cv2.dilate(mask, dilate_kernel, iterations=it)
-    mask_b = cv2.GaussianBlur(mask_d, gaussian_kernel, x_thresh)
+    img = cv2.imread(name)  # Load Image
+    converted = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)  # Convert to HSV Space
+    mask = cv2.inRange(converted, lower, upper)  # Mask ranges of color
+    mask_d = cv2.dilate(mask, dilate_kernel, iterations=it)  # Dilate the imahe
+    mask_b = cv2.GaussianBlur(mask_d, gaussian_kernel,
+                              x_thresh)  # Blurr the image
 
     return mask_b
 
