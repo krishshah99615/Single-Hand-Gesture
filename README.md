@@ -5,6 +5,8 @@
 
 Bharatanatyam also previously called Sadir Attam is a major form of Indian classical dance that is indigenous to Tamil Nadu. Bharata Natyam is the oldest classical dance tradition in India.This repo guides you to train a model for classifying 28 Mudras in this dance form using Machine Learning
 
+![alt text](https://github.com/krishshah99615/Single-Hand-Gesture/blob/master/Readme%20image/all.png)
+
 ## Highlights
   - Classifies 28 types of mudras [Currently only 3]
   - Script for Tesing on Webcam
