@@ -18,7 +18,7 @@ Bharatanatyam also previously called Sadir Attam is a major form of Indian class
     ```sh
     $ python dataset.py -n "Gesture_name"
   
-  - Set preprocessing accoring to to lighting using the script preprocess.py
+  - Set preprocessing accoring to to lighting using the script preprocess.py [*OPTIONAL*]
     ```sh
     $ python preprocess.py 
 
@@ -27,5 +27,12 @@ Bharatanatyam also previously called Sadir Attam is a major form of Indian class
 
   - Go to the follwing link
     ```sh
-    https://colab.research.google.com/drive/1H1vw0ui1w_mHK0S0Or-2TVGBBtQIEkHm?usp=sharing
+    $ jupyter notebook Training/Training.ipynb
+     ```
+
+# Steps for Testing on Webcam
+
+  - for checking if model is working run the following script where -m referes to models path
+    ```sh
+    $ python inference.py -m "model.h5"
      ```
